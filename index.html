@@ -17,17 +17,17 @@
         <form class="form" action="get">
 
             <label class="form__label" for="form-name">Name</label>
-            <input class="form__fild" type="text" id="form-name" placeholder="Enter your name">
+            <input class="form__fild" required type="text" id="form-name" placeholder="Enter your name">
 
             <label class="form__label" for="form-email">Email</label>
-            <input class="form__fild" type="email" id="form-email" placeholder="Enter your Email">
+            <input class="form__fild" required type="email" id="form-email" placeholder="Enter your Email">
 
-            <label class="form__label" for="form-age">Age (optional)</label>
-            <input class="form__fild" type="number" id="form-age" value="19" min="12" max="99">
+            <label class="form__label" for="form-age">Age <small><em>(optional)</em></small></label>
+            <input class="form__fild" required type="number" id="form-age" placeholder="Age" min="12" max="99">
             
             <label class="form__label" for="form-role">Which option best describes your current role?</label>
-            <select class="form__fild" name="form-role" id="form-role">
-                <option value="Select Current role">Select Current role</option>
+            <select class="form__fild" name="form-role" id="form-role" required>
+                <option selected disabled value>Select Current Role</option>
                 <option value="student">Student</option>
                 <option value="full time job">Full Time Fob</option>
                 <option value="full time job">Full Time Fob</option>
@@ -36,6 +36,7 @@
                 <option value="other">Other</option>
             </select>
 
+            <label class="form__label">Would you recommend freeCodeCamp to a friend?</label>
             <div class="radio">
                 <input class="radio__btn" type="radio" id="radio-def" name="radio">
                 <label class="radio__label" for="radio-def">Definitely</label>
@@ -50,8 +51,8 @@
             </div>
             
             <label class="form__label" for="favorits">What is your favorite feature of freeCodeCamp?</label>
-            <select name="favorits" id="favorits">
-                <option value="Select am Option">Select an Option</option>
+            <select class="form__fild" name="favorits" id="favorits">
+                <option selected disabled value>Select an Option</option>
                 <option value="challenges">Challenges</option>
                 <option value="projects">Projects</option>
                 <option value="Community">Community</option>
@@ -60,52 +61,52 @@
 
             <label class="form__label" for="">What would you like to see improved? (Check all that apply)</label>
             <div class="checkbox">
-                <input id="checkbox-1" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-1" type="checkbox" name="what you like">
                 <label for="checkbox-1">Front-end Projects</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-2" type="checkbox" value="Back-end Projects" name="what you like">
+                <input class="checkbox__btn" id="checkbox-2" type="checkbox" value="Back-end Projects" name="what you like">
                 <label for="checkbox-2">Back-end Projects</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-3" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-3" type="checkbox" name="what you like">
                 <label for="checkbox-3">Data Visualization</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-4" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-4" type="checkbox" name="what you like">
                 <label for="checkbox-4">Challenges</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-5" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-5" type="checkbox" name="what you like">
                 <label for="checkbox-5">Open Source Community</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-6" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-6" type="checkbox" name="what you like">
                 <label for="checkbox-6">Gitter help rooms</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-7" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-7" type="checkbox" name="what you like">
                 <label for="checkbox-7">Videos</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-8" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-8" type="checkbox" name="what you like">
                 <label for="checkbox-8">City Meetups</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-9" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-9" type="checkbox" name="what you like">
                 <label for="checkbox-9">Wiki</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-10" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-10" type="checkbox" name="what you like">
                 <label for="checkbox-10">Forum</label>
             </div>
             <div class="checkbox">
-                <input id="checkbox-11" type="checkbox" name="what you like">
+                <input class="checkbox__btn" id="checkbox-11" type="checkbox" name="what you like">
                 <label for="checkbox-11">Additional Courses</label>
             </div>
 
-            <label for="textarea">Any comments or suggestions?</label>
-            <textarea name="comments/suggestions" id="textarea" cols="30" rows="10"></textarea>
+            <label class="form__label" for="textarea">Any comments or suggestions?</label>
+            <textarea class="text-area" placeholder="Enter your comment here..." name="comments/suggestions" id="textarea" cols="30" rows="10"></textarea>
 
             <button class="submit-btn"type="submit">Submit</button>
 
