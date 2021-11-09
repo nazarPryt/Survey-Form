@@ -43,13 +43,13 @@ body:before {
 
 
 /*     Title    */
-.title {
+#title {
     padding-top: 40px;
     font-weight: 400;
     font-size: 30px;
     text-align: center;
 }
-.sub-title {
+#description {
     font-weight: 200;
     font-size: 20px;
     font-style: italic;
@@ -58,7 +58,7 @@ body:before {
 
 
 /*     Form Container   */
-.form {
+#survey-form {
     background-color: rgba(28, 29, 49, 0.7);
     border-radius: 3px;
     padding: 40px;
